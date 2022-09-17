@@ -1,733 +1,848 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="generator" content="WordPress 5.0.1"/>
-    <meta name="robots" content="index,follow,max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <title>sellmynote</title>
-    <meta name="description"
-          content="sellmynote"/>
-    <meta name="keywords" content="sellmynote"/>
-    <link rel="icon" href="" type="image/x-icon" />
-    <script type="fa2c835219960e3374a01bbc-text/javascript">
-         WebFontConfig = { google: { families: ["Oswald", "B612"] } }; (function(d) { var wf = d.createElement("script"), s = d.scripts[0]; wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"; wf.async = true; s.parentNode.insertBefore(wf, s); })(document);
-    </script>
-    <style type="text/css">:root {
-        --main-color: #525452;
-        --font-heading: Oswald;
-        --font-body: B612;
-    }
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="author" content="" />
+        <title>sellmynote</title>
+        <meta name="description"
+              content="sellmynote"/>
+        <meta name="keywords" content="sellmynote"/>
+        <link rel="icon" href="" type="image/x-icon" />
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+         <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
 
-    .enable_footer_columns_dark {
-        background: #151515;
-        color: #fff;
-        border-top: 1px solid #303030;
-    }</style>
-    <link rel="stylesheet" href="article/css/bootstrap.min.css?ver=3.0.0" type="text/css"
-          media="all"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62dc22846895ac00191ea9d1&product=inline-share-buttons" async="async"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="home/css/styles.css" rel="stylesheet" />
+        <style>
+        .bg-header {
+          --bs-bg-opacity: 1;
 
-    <style type="text/css">.lmcy_header_magazine_style.two_header_top_style.lmcy_cus_top_share .header_top_bar_wrapper {
-        background: #333333;
+          background-image: linear-gradient(#000000,#000000) !important;
     }
-     body{
-        font-family:  var(--bs-body-font-family)!important;
-    }
-     h3 {
-          font-size: 24px !important;
-          }
-          p{
-          margin-bottom: 28px !important;
-          }
-
-    .fab{
-        font-family: var(--bs-body-font-family) !important;
-    }
-    .header-text-color{
+        .bg-footer {
+          --bs-bg-opacity: 1;
+         background-image: linear-gradient(#ebc50b,#ebc50b) !important;
+        }
+        .header-text-color{
             color: #ffffff !important;
         }
-    .footer-text-color{
-        color: #ffffff !important;
-    }
-    .menu_wrapper{
-         background-image: linear-gradient(#000000,#000000) !important;
-         color : #ffffff
-    }
-    .home_section3 {
-        background-color: #33333308 ;
-    }
-
-    .enable_footer_columns_dark {
-    background-image: linear-gradient(#ebc50b,#ebc50b) !important;
-        color: #ffffff;
-        border-top: 1px solid #333333;
-    }
-
-    .lmcy_radus_e {
-        border-radius: 2px;
-    }
-
-    .single_post_title_main {
-        text-align: left;
-        max-width: 99%;
-        font-size: 31px;
-    }
-
-    ul.jl_s_pagination {
-        display: none;
-    }
-
-    .cc-window {
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
-        z-index: 999;
-        opacity: 1;
-        transition: all 0.3s ease;
-    }
-
-    .cc-window .box-cookies {
-        padding: 15px;
-        text-align: center;
-        color: #DBE0DF;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 30px;
-    }
-
-    .cc-window .box-cookies {
-        padding: 15px;
-        text-align: center;
-        color: #DBE0DF;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 30px;
-    }
-
-    .cc-window .cc-close {
-        display: inline-block;
-        margin-left: 10px;
-        line-height: normal;
-        padding: 10px 20px;
-        background-color: #333333;
-        color: #fff;
-        font-weight: bold;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .footer_logo_about {
-        font-weight: bold;
-        font-size: 31px;
-    }
-
-    .post_content.lmcy_content {
-        text-align: justify;
-    }
-
-    .jm-post-like {
-        cursor: pointer;
-    }
-
-    a.jm-post-like.loved {
-        background: red;
-        border-radius: 19px;
-    }
-
-    .single_post_share_icon_post li a i {
-        display: inline-block;
-        padding: 0;
-        color: #fff;
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 18px;
-        font-weight: 500;
-        height: 40px;
-        line-height: 40px;
-        width: 40px;
-        border-radius: 19px;
-    }
-
-    .single-post-meta-wrapper.lmcy_sfoot i {
-        float: left;
-        display: inline-block;
-        padding: 0;
-        color: #000;
-        text-align: center;
-        margin-right: 0;
-        text-transform: capitalize;
-        font-size: 18px;
-        font-weight: 500;
-        height: 40px;
-        line-height: 40px;
-        width: 40px;
-        border-radius: 19px;
-        border: 1px solid #ebebeb;
-    }
-
-    .auth .author-info.lmcy_auth_head {
-        background: transparent;
-        padding: 0px 11%;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-
-    .main_title_col .auth {
-        margin-top: 0px;
-        margin-bottom: 30px;
-        padding: 0px;
-        border: 0px !important;
-    }
-
-    .auth .author-info.lmcy_auth_head {
-        background: transparent;
-        padding: 0px 11%;
-        text-align: center;
-        margin-bottom: 0px;
-    }
-
-    .author-info.lmcy_auth_head .author-avatar {
-        display: block;
-        float: right;
-        margin-left: 50px;
-    }
-
-    .author-info.lmcy_auth_head .avatar {
-        width: 198px !important;
-        border: 7px solid #fff;
-        border-radius: 50%;
-        overflow: hidden;
-        box-shadow: 0 0 0 4px #333333;
-        margin-top: -27px;
-    }
-
-    .author-info.lmcy_auth_head .author-description {
-        float: right;
-        display: block;
-        margin: 0px;
-        width: 55%;
-    }
-
-    .auth .author_commentcount, .auth .author_postcount {
-        font-size: 12px;
-        color: #fff;
-        line-height: 1.2;
-        background: #333333;
-        margin-right: 5px;
-        padding: 2px 10px;
-        border-radius: 19px;
-    }
-
-    .grid-sidebar .box {
-        margin-bottom: 0 !important;
-        width: 33%;
-        padding: 0;
-        padding-right: 20px;
-        padding-left: 20px;
-        float: left;
-        position: relative;
-    }
-
-    .jlm_w .jlma {
-        top: 3px;
-    }
-
-    .jlm_w .jlmb {
-        top: 11px;
-    }
-
-    .jlm_w .jlmc {
-        top: 19px;
-    }
-
-    .jlm_w span {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        border-radius: 23px;
-        background: #333333;
-        left: 5px;
-    }
-
-    .bottom_footer_menu_text .lmcy_ft_w {
-        border-top: 1px solid #ffff;
-    }
-
-    .menu-footer {
-        margin-bottom: 0;
-        padding: 0px;
-        float: right;
-        margin: -5px 35px 0px 0px;
-    }
-
-    .footer-bottom {
-        color: #fff;
-    }
-
-    #menu-footer-menu li a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-.jellywp_about_us_widget_wrapper .footer_logo_about {
-margin-bottom: 30px;
-float: none;
-display: inline-block;
-width: 100%;
-}
-
-.lmcy_cat_img_w:last-child, .footer-columns .lmcy_cat_img_w:nth-last-child(2) {
-margin-bottom: 8px;
-    }
-
-    .jli-moon {
-    font-family: Font Awesome 5 Pro !important;
-    }
-
-    .jli-moon:before {
-    content: "\f1c5";
-}
-
-    .jli-sun {
-    font-family: Font Awesome 5 Free !important;
-    }
-
-    .jli-sun:before {
-    content: "\f1c5";
-}
-
-    .lmcy_day_night .jl-night-toggle-icon {
-    width: 41px;
-        background: rgba(0, 0, 0, .1);
-        border-radius: 40;
-    }
-
-    .lmcy__cat_img_w .lmcy__cat_img_c {
-    height: 61px;
-        position: relative;
-        border-radius: 22px;
-        margin-top: 14px;
-    }
-
-    .footer-columns .lmcy__cat_img_w .lmcy__cat_img_c {
-    border: 1px solid #525252;
-        background: #3a3939;
-    }
-
-    header.header-wraper.lmcy_header_magazine_style.two_header_top_style.header_layout_style3_custom.lmcy_cus_top_share.border_down {
-    background: #333333;
-    height: 122px;
-    }
-
-    .lmcy__s_pagination {
-    display: none;
-}
-
-    .lmcy_cites {
-    margin-top: 40px;
-    }
-
-    .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-        width: 100%;
-    }
-
-    @media only screen and (max-width: 400px) {
-    .author-info.lmcy_auth_head .author-description {
-        float: right;
-        display: block;
-        margin: 0px;
-            width: 100%;
+        .footer-text-color{
+            color: #ffffff !important;
         }
-
-        .author-info.lmcy_auth_head .author-avatar {
-        display: block;
-        float: none;
-        margin-left: 0px;
-        }
-
-        .grid-sidebar .box {
-        margin-bottom: 0 !important;
-            width: 100%;
-            padding: 0;
-            padding-right: 20px;
-            padding-left: 20px;
-            float: left;
-            position: relative;
-        }
-    }</style>
-    <style></style>
-</head>
-<body class="mobile_nav_class ">
-<div id="ccokies" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc"
-     class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom " style="display:none;">
-    <div class="box-cookies"><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website.<a
-            style="color: white;" href="privacy.html"> Cookies Policy</a>.</span><span
-            aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-close"> OK !</span></div>
-</div>
-<div class="options_layout_wrapper lmcy_clear_at lmcy_radius lmcy_none_box_styles lmcy_border_radiuss lmcy_en_day_night">
-    <div class="options_layout_container full_layout_enable_front">
-        <header class="header-wraper lmcy_header_magazine_style two_header_top_style header_layout_style3_custom lmcy_cus_top_share ">
-            <div class="header_top_bar_wrapper" style="display : none">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="menu-primary-container navigation_wrapper">
-                                <ul id="lmcy_top_menu" class="lmcy_main_menu"></ul>
-                            </div>
-                            <div class="lmcy_top_cus_social" style="height: 40px;">
-                                <div class="menu_mobile_share_wrapper"><span class="lmcy_hfollow" style="display : none">Connect with us!</span>
-                                    <ul class="social_icon_header_top lmcy_socialcolor">
-                                        <li style="display:none"><a class="linkedin" rel="nofollow"
-                                               href="{{facebook}}"
-                                               target="_blank"><i class="jli-facebook"></i></a></li>
-                                        <li style="display:none"><a class="linkedin" rel="nofollow"
-                                               href="{{twitter}}"
-                                               target="_blank"><i class="jli-twitter"></i></a></li>
-                                        <li style="display:none"><a class="linkedin" rel="nofollow"
-                                               href="{{youtube}}"
-                                               target="_blank"><i class="jli-youtube"></i></a></li>
-                                        <li style="display:none"><a class="linkedin" rel="nofollow"
-                                               href="{{instagram}}"
-                                               target="_blank"><i class="jli-instagram"></i></a></li>
-                                        <li style="display:none"><a class="linkedin" rel="nofollow"
-                                               href="{{pinterest}}"
-                                               target="_blank"><i class="jli-pinterest"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+</style>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-header">
+            <div class="container">
+            <a style="color: inherit; text-decoration: inherit;" href="index.html">
+                <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: none " src="" onerror="this.remove()"></span>
+                <span class="navbar-brand header-text-color">sellmynote</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: none">
+                       <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href="{{facebook}}"><i class="icon-social-facebook"></i></a></li>
+                       <li class="nav-item"  style="display: none"><a class="nav-link header-text-color" target="_blank"  href="{{twitter}}"><i class="icon-social-twitter"></i></a></li>
+                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href="{{instagram}}"><i class="icon-social-instagram"></i></a></li>
+                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href="{{pinterest}}"><i class="icon-social-pinterest"></i></a></li>
+                        <li class="nav-item" style="display: none"><a class="nav-link header-text-color" target="_blank"  href="{{youtube}}"><i class="icon-social-youtube"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="lmcy_blank_nav"></div>
-            <div id="menu_wrapper" class="menu_wrapper lmcy_menu_sticky lmcy_stick">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_menu col-md-12" style="height: 73px;">
-                            <div class="logo_small_wrapper_table">
-                                <div class="logo_small_wrapper"><a class="logo_link"
-                                                                   href="index.html"
-                                                                   style="margin-top: -10px;">
-                                    <div class="lmcy_logo_n">
-                                        <div class="fab fa-osis header-text-color" style="font-size: 32px;">
-                                        <img style="max-height:30px; height: 30px !important; display: none " src="" onerror="this.remove()"> sellmynote
-                                        </div>
-                                    </div>
-                                    <div class="lmcy_logo_w">
-                                        <div class="fab fa-osis header-text-color" style="font-size: 32px;"> sellmynote
-                                        </div>
-                                    </div>
-                                </a></div>
-                            </div>
-                            <div class="search_header_menu lmcy_nav_mobile">
-                                <div class="menu_mobile_icons">
-                                    <div class="jlm_w">
-                                    <span class="jlma" style="background-color: #ffffff"></span>
-                                    <span class="jlmb" style="background-color: #ffffff"></span>
-                                    <span class="jlmc" style="background-color: #ffffff"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </nav>
+        <header class="py-5">
+            <div class="container px-lg-5" >
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center bg-opacity-25" style="height: 500px; background-image: url(banner_image.png); background-size: cover; background-repeat: no-repeat">
+
                 </div>
             </div>
         </header>
-        <div class="mobile_menu_overlay"></div>
-       <div class="lmcy_single_style4">
-            <div class="single_content_header single_captions_overlay_bottom_image_full_width">
-               <div class="image-post-thumb"
-                     style="background-image: url(497.png)"></div>
-                <div class="single_full_breadcrumbs_top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single_post_entry_content_wrapper">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="single_post_entry_content">
-                                <h1 class="single_post_title_main">Can you sell a note?
-                                </h1>
 
+        <!-- Page Content-->
+        <section class="pt-4">
+            <div class="container px-lg-5">
+                <!-- Page Features-->
+                <div class="row gx-lg-5">
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-do-you-value-a-mortgage-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="492.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How do you value a mortgage note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Appraise the current value of the property.
+Determine how much of the loan you've paid off.
+Add in a...</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="content_main" class="clearfix lmcy_spost">
-            <div class="container">
-                <div class="row main_content">
-                    <div class="col-md-9 loop-large-post" id="content">
-                        <div class="widget_container content_page">
-                            <div class="post-2970 post type-post status-publish format-gallery has-post-thumbnail hentry category-business tag-inspiration tag-morning tag-tip tag-tutorial post_format-post-format-gallery"
-                                 id="post-2970">
-                                <div class="single_section_content box blog_large_post_style">
-                                    <div class="post_content_w">
-
-                                    <div>
-                                    <p>
-                                    <span class="lmcy_post_meta">
-                                    <span class="lmcy_author_img_w"></span>
-                                    <span class="post-date"></span>
-                                    </span>
-
-                                    </p>
-                                        <p> Can you sell a note? The short answer is yes. However, the process can vary depending on the type of loan and the terms of the agreement. For example, you might be able to sell a mortgage note to a bank or to a private investor. If you’re looking to sell a note to a private investor, you’ll want to consider your state’s requirements for debt sales.</p><h3>A note is borrowed money that's secured by an asset.</h3><p> When someone takes a loan, they typically sign a promissory note. This document outlines the terms of the loan, including how much you owe, the interest rate, and when the loan will be repaid. If you default on the loan, the lender can take legal action to collect the money you owe. However, the lender can't sell a note on the market.</p><h3>You can sell a note and repay it over time.</h3><p> If a bank or lender gives you a mortgage on your home in exchange for a note, then you can sell that note to a private investor. However, you'll need to evaluate your financial situation and determine if it makes sense to sell the note. Typically, you'll want to sell the note if you're underwater on your mortgage or if you owe more than the property is worth.</p><h3>If you sell your note before the loan matures, you can repay any outstanding balance and earn any accrued interest.</h3><p> If you want to sell a note in the secondary market before it matures, you'll need to do a little research. Not all notes are created equal. Some have a fixed interest rate. Others are adjustable-rate. Some have a stated term (e.g., a five-year note with a three-year maturity) while others have no stated term. You'll need to research the different types of notes available to you before you decide which note to sell.</p><h3>You can sell a note on the secondary market, either directly to a note buyer or through a broker.</h3><p> After you’ve repaid the loan, you can sell the note to a note buyer. This buyer will pay you a percentage of the original loan amount, less the interest accrued. If you don’t pay off the loan in full, the buyer will take the note and sell it to another investor.</p><h3>If you sell your note to a note buyer, they will purchase the note for the full amount.</h3><p> If you own a note that you want to sell, you'll need to find a buyer. There are many options for selling a note. One option is to sell it through a company that specializes in note sales. These companies will typically have a network of investors. You can provide the company with a list of interested buyers and they will negotiate the best possible price. You will likely have to pay a commission for their services. Another option is to sell the note privately. This means you will need to find someone you trust who is willing to buy your note. You will likely need to pay a commission as well.</p><h3>If you sell your note to a broker, they will often charge a fee to find a buyer, typically a percentage of the note's value.</h3><p> Some private notes are listed on secondary markets, similar to the stock exchange. These notes are held by investors who want to sell them. If you have a private note that you'd like to sell, check if it's listed on a site like NoteMarket or Zebit. You can also check the market for other types of notes on sites like Investment Exchange, where people sell commercial property investment notes. The market for private notes is growing. It's possible that your note will sell quickly if it's listed on one of these sites.</p><h3>If you sell your note after the original loan matures, you'll have to pay the full amount of the note to the lender, plus any accrued interest.</h3><p> You can sell a note to a bank or private investor. Note buyers evaluate the value of a note by looking at the balance and interest rates, as well as the creditworthiness of the borrower. If you sell a note to a bank or private investor, the new owner will likely want to get new financing from the lender.</p><h3>Conclusion</h3><p> The short answer is yes, you can sell a note. A note is simply a loan you take out against an asset. For instance, if you have a house you can sell a note on it to a bank or private investor. Or, if you have a boat, you could sell a boat note to a bank that finances boat dealers. If you own a business, you can sell a note to a bank that finances small businesses. The possibilities are endless!</p>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-60%-lvr-mean.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="493.png" alt="Image not found" />
                                     </div>
-                                    </div>
-
+                                    <h2 class="fs-4 fw-bold">What does 60% LVR mean?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">The main reason lenders use the LTV ratio is to determine how much of a mortgage they can give you.
+...</p>
                                 </div>
                             </div>
-                            <div class="brack_space"></div>
-                        </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-80%-lvr-mean.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="494.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What does 80% LVR mean?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">The term loan-to-value ratio (LTV) is used to compare the amount of money you owe on your loan to th...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-do-you-sell-a-mortgage-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="495.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How do you sell a mortgage note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Selling a mortgage note is a process with many variables and many different options available to you...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-is-promissory-note-worth.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="496.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What is promissory note worth?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">While every lender and every borrower has a different perspective, the general rule is that a promis...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-you-sell-a-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="497.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can you sell a note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">A note is borrowed money that's secured by an asset.
+You can sell a note and repay it over time.
+If ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-do-i-get-out-of-a-promissory-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="498.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How do I get out of a promissory note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">You can pay off the loan early.
+Get a discharge.
+Sell the car.
+Refinance the car loan.
+Negotiate a l...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="are-promissory-notes-transferable.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="499.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Are promissory notes transferable?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">While promissory notes are generally transferrable, there are certain restrictions.
+The promissory n...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-it-mean-to-sell-a-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="500.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What does it mean to sell a note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Purchasing a note is typically done to raise cash.
+When selling a note, you are selling the right to...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-note-means-in-real-estate.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="501.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What does note means in real estate?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">These are used to express the seller’s opinion of the value of the property, and can be either pos...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-can-i-sell-my-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="502.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How can I sell my notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">If you've written music for a specific company and they've paid you in company stock, it might be wi...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-much-money-can-i-make-for-selling-my-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="503.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How much money can I make for selling my notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">The value of your notes depends on how much demand there is for them, how many buyers there are, and...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-your-class-notes-illegal.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="504.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling your class notes illegal?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Selling your high school, college or university’s class notes is considered the unauthorized use o...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-i-sell-my-college-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="505.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can I sell my college notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">It’s possible to sell your college notes, but it’s not easy.
+The first thing you need to do is c...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-happens-if-you-sell-a-house-with-a-mortgage-on-it.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="506.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What happens if you sell a house with a mortgage on it?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">You’ll probably need to pay back your mortgage company in full.
+Be prepared to pay the buyer’s a...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-much-does-it-cost-to-discharge-your-mortgage.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="507.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How much does it cost to discharge your mortgage?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Every lender and mortgage company is different, and their policies and fees may vary.
+Some companies...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-it-mean-to-buy-a-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="508.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What does it mean to buy a note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Whether it's a commercial note issued by a bank or a note issued on a municipal bond, buying a note ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-is-a-distressed-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="509.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What is a distressed note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">A note is considered "distressed" if its value has decreased substantially since its original issue ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-is-the-difference-between-a-mortgage-and-a-mortgage-note.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="510.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What is the difference between a mortgage and a mortgage note?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">A mortgage is a loan provided by a lender to the borrower, secured by real estate.
+The mortgage note...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-are-non-performing-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="511.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What are non performing notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Non-performing loans (NPLs) are loans that are in default or not paying back according to the terms ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-does-a-note-do-in-mortgage.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="512.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What does a note do in mortgage?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Although a mortgage note is only a small part of the overall mortgage process, it can have a huge im...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="do-you-need-a-note-with-a-mortgage.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="513.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Do you need a note with a mortgage?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">If you have a down payment or other funds you wish to use on the mortgage,
+You have a large loan or ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-is-the-difference-between-a-note-and-a-mortgage-document.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="514.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What is the difference between a note and a mortgage document?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">While both a mortgage note and mortgage document are often referred to as mortgage papers, they each...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-a-note-the-same-as-a-mortgage.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="515.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is a note the same as a mortgage?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">A note is a legal agreement between a borrower and lender, which is used to protect the lender from ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-do-you-sell-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="516.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How do you sell notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Sell your notes in person.
+Sell directly to another buyer.
+Sell through a third party.
+Sell your not...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-do-i-buy-secured-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="517.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How do I buy secured notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">When you buy a bond, you can choose between a call and a put option.
+With a call option, you can mak...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-are-notes-investment.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="518.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What are notes investment?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">The main thing you need to know about notes is that they are an asset class that is traded like stoc...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-you-buy-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="519.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can you buy notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Notes are sold in fractional denominations, so you need to know the smallest amount you are willing ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-are-notes-investment.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="520.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What are notes investment?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Notes are usually issued by companies, governments, or other entities that have money they need to l...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="where-can-i-sell-my-notes-and-earn-money.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="521.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Where can I sell my notes and earn money?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">The marketplaces you choose to sell your notes on will determine the value of your notes.
+Most of th...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-notes-legal.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="522.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling notes legal?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Notes are intangible, and they are not subject to capital gains tax.
+If you hold the note for more t...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-studentvip-allowed.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="523.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is Studentvip allowed?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">StudentVip is a program that allows you to purchase a subscription for the full college application ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-notes-online-legal.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="524.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling notes online legal?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Legally, selling a note is the same as selling any other type of asset.
+Some jurisdictions may requi...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-do-i-need-to-organise-when-selling-a-house.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="525.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What do I need to Organise when selling a house?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Cleaning
+Packing up
+Dealing with potential buyers
+Setting a price
+Coordinating repairs
+Coordinating ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-a-bank-stop-sale-of-house.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="526.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can a bank stop sale of house?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Even if a home is in “pre-foreclosure,” the home can still be sold.
+The home can be transferred ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-happens-to-my-mortgage-after-i-sell.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="527.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What happens to my mortgage after I sell?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Most lenders will release your mortgage within days of the date you received the proceeds from the s...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="what-happens-to-bank-loan-when-you-sell-house.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="528.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">What happens to bank loan when you sell house?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">It depends on the type of loan you have.
+If you don't pay your mortgage in full, the lender can purs...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="where-can-i-sell-study-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="529.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Where can I sell study notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Your professor may sell them directly.
+Or they may be willing to sell them to you.
+You can set up a ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-study-notes-legal.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="530.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling study notes legal?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Whether or not selling your old study materials is legal depends on your school and state.
+The best ...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-i-make-money-by-selling-my-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="531.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can I make money by selling my notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Always ask for permission to sell your notes.
+You can sell individual notes to individuals in some c...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-much-money-can-you-make-from-studocu.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="532.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How much money can you make from StuDocu?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">StuDocu is designed to help you create and manage your professional documents and keep your business...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-notes-profitable.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="533.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling notes profitable?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">You can earn some additional cash by selling notes.
+Consider selling if you have a high-yield saving...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="can-you-get-in-trouble-for-selling-your-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="534.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Can you get in trouble for selling your notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">If you are selling your notes as part of a short-term trading strategy, you are probably safe from a...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="is-selling-notes-academic-dishonesty.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="535.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">Is selling notes academic dishonesty?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">Selling notes has become a way for many people to make money on their college and university educati...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div><div class="col-lg-6 col-xxl-4 mb-5">
+                        <a class="text-decoration-none text-reset" href="how-much-can-you-make-selling-notes.html">
+                            <div class="card bg-light border-0 h-100">
+                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                    <div class="feature text-white rounded-3 mb-4 mt-n4">
+                                        <img class="img-fluid rounded" src="536.png" alt="Image not found" />
+                                    </div>
+                                    <h2 class="fs-4 fw-bold">How much can you make selling notes?</h2>
+                                    <div class="small text-muted"></div>
+                                    <div class="small text-muted"></div>
+                                     <!-- article content truncated-->
+                                    <p class="mb-0">You can make money from selling old, unused college notes for a couple of reasons.
+If you sell your ...</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="clearfix"></div>
-        <br>
-        <br>
-        <div class="container px-4">
-        
-        </div>
-        <div class="clearfix"></div>
 
-        <div id="content_nav" class="lmcy_mobile_nav_wrapper">
-            <div id="nav" class="lmcy_mobile_nav_inner">
-                <div class="menu_mobile_icons mobile_close_icons closed_menu"><span class="lmcy_close_wapper"><span
-                        class="lmcy_close_1"></span><span class="lmcy_close_2"></span></span></div>
-                <ul id="mobile_menu_slide" class="menu_moble_slide">
-                    <li class="menu-item current-menu-item current_page_item"><a
-                            href="index.html">Home<span class="border-menu"></span></a></li>
-                    <li class="menu-item menu-item-has-children"><a href="#">Top Reads<span
-                            class="border-menu"></span><span class="arrow_down"><i class="jli-down-chevron"
-                                                                                   aria-hidden="true"></i></span></a>
-                        <ul class="sub-menu menu-active-class">
-                            <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-do-you-value-a-mortgage-note.html">How do you value a mortgage note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-60%-lvr-mean.html">What does 60% LVR mean?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-80%-lvr-mean.html">What does 80% LVR mean?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-do-you-sell-a-mortgage-note.html">How do you sell a mortgage note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-is-promissory-note-worth.html">What is promissory note worth?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-you-sell-a-note.html">Can you sell a note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-do-i-get-out-of-a-promissory-note.html">How do I get out of a promissory note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="are-promissory-notes-transferable.html">Are promissory notes transferable?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-it-mean-to-sell-a-note.html">What does it mean to sell a note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-note-means-in-real-estate.html">What does note means in real estate?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-can-i-sell-my-notes.html">How can I sell my notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-much-money-can-i-make-for-selling-my-notes.html">How much money can I make for selling my notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-your-class-notes-illegal.html">Is selling your class notes illegal?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-i-sell-my-college-notes.html">Can I sell my college notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-happens-if-you-sell-a-house-with-a-mortgage-on-it.html">What happens if you sell a house with a mortgage on it?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-much-does-it-cost-to-discharge-your-mortgage.html">How much does it cost to discharge your mortgage?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-it-mean-to-buy-a-note.html">What does it mean to buy a note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-is-a-distressed-note.html">What is a distressed note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-is-the-difference-between-a-mortgage-and-a-mortgage-note.html">What is the difference between a mortgage and a mortgage note?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-are-non-performing-notes.html">What are non performing notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-does-a-note-do-in-mortgage.html">What does a note do in mortgage?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="do-you-need-a-note-with-a-mortgage.html">Do you need a note with a mortgage?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-is-the-difference-between-a-note-and-a-mortgage-document.html">What is the difference between a note and a mortgage document?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-a-note-the-same-as-a-mortgage.html">Is a note the same as a mortgage?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-do-you-sell-notes.html">How do you sell notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-do-i-buy-secured-notes.html">How do I buy secured notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-are-notes-investment.html">What are notes investment?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-you-buy-notes.html">Can you buy notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-are-notes-investment.html">What are notes investment?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="where-can-i-sell-my-notes-and-earn-money.html">Where can I sell my notes and earn money?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-notes-legal.html">Is selling notes legal?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-studentvip-allowed.html">Is Studentvip allowed?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-notes-online-legal.html">Is selling notes online legal?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-do-i-need-to-organise-when-selling-a-house.html">What do I need to Organise when selling a house?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-a-bank-stop-sale-of-house.html">Can a bank stop sale of house?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-happens-to-my-mortgage-after-i-sell.html">What happens to my mortgage after I sell?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="what-happens-to-bank-loan-when-you-sell-house.html">What happens to bank loan when you sell house?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="where-can-i-sell-study-notes.html">Where can I sell study notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-study-notes-legal.html">Is selling study notes legal?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-i-make-money-by-selling-my-notes.html">Can I make money by selling my notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-much-money-can-you-make-from-studocu.html">How much money can you make from StuDocu?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-notes-profitable.html">Is selling notes profitable?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="can-you-get-in-trouble-for-selling-your-notes.html">Can you get in trouble for selling your notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="is-selling-notes-academic-dishonesty.html">Is selling notes academic dishonesty?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="how-much-can-you-make-selling-notes.html">How much can you make selling notes?
-                                                                                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="how-do-you-value-a-mortgage-note.html">How do you value a mortgage note?
-                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="what-does-60%-lvr-mean.html">What does 60% LVR mean?
-                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="what-does-80%-lvr-mean.html">What does 80% LVR mean?
-                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="how-do-you-sell-a-mortgage-note.html">How do you sell a mortgage note?
-                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="what-is-promissory-note-worth.html">What is promissory note worth?
-                        <span class="border-menu"></span></a></li><li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                        href="can-you-sell-a-note.html">Can you sell a note?
-                        <span class="border-menu"></span></a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="py-5 bg-gray-200 text-muted">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                       <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
+                        <a href="terms.html">Terms of Use</a>
+                       </div>
 
-            </div>
-        </div>
-        <footer id="footer-container" class="lmcy_footer_act enable_footer_columns_dark">
-            <div class="footer-columns">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4" style="display: none">
-                            <div id="sprasa_about_us_widget-2" class="widget jellywp_about_us_widget">
-                                <div class="widget_lmcy_wrapper about_widget_content">
-                                    <div class="jellywp_about_us_widget_wrapper">
-                                        <div class="footer_logo_about" style="">sellmynote</div>
-                                        <div class="social_icons_widget">
-                                            <ul class="social-icons-list-widget icons_about_widget_display"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sprasa_about_us_widget-4" class="widget jellywp_about_us_widget">
-                                <div class="widget_lmcy_wrapper about_widget_content">
-                                    <div class="jellywp_about_us_widget_wrapper">
-                                        <div class="social_icons_widget">
-                                            <ul class="social-icons-list-widget icons_about_widget_display"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div style=" display: inherit" class="fw-bold text-uppercase text-dark mb-3">
+                        <a href="privacy.html">Privacy Policy</a>
                         </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                       <h6 style=" display: inherit" class="text-uppercase text-dark mb-3">
+                        <a href="sitemap.html">Sitemap</a>
+                        </h6>
+
+                       <h6 style=" display: inherit" class="text-uppercase text-dark mb-3">
+                        <a href="contact.html">Contact Us!</a>
+                        </h6>
+
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom enable_footer_copyright_dark">
-                <div class="container">
-                    <div class="row bottom_footer_menu_text">
-                    <div class="col-md-6">
-                        <div class="lmcy_logo_n">
-                            <div class="fab fa-osis footer-text-color" style="font-size: 32px;"> <img style="max-height:30px; height: 30px !important; display: {{is_footer_log}} " src="" onerror="this.remove()"> sellmynote
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 lmcy_header_magazine_style lmcy_header_magazine_style two_header_top_style">
-                        <div class="lmcy_top_cus_social" style="height: 40px;">
-                            <div class="menu_mobile_share_wrapper footer-text-color" style="display: flex"><span class="lmcy_hfollow" style="padding-top: 10px;display : none">Connect with us!</span>
-                                <ul class="social_icon_header_top lmcy_socialcolor">
-                                    <li style="display:none"><a class="linkedin footer-text-color" rel="nofollow"
-                                           href="{{facebook}}"
-                                           target="_blank"><i class="jli-facebook"></i></a></li>
-                                    <li style="display:none"><a class="linkedin footer-text-color" rel="nofollow"
-                                           href="{{twitter}}"
-                                           target="_blank"><i class="jli-twitter"></i></a></li>
-                                    <li style="display:none"><a class="linkedin footer-text-color" rel="nofollow"
-                                           href="{{youtube}}"
-                                           target="_blank"><i class="jli-youtube"></i></a></li>
-                                    <li style="display:none"><a class="linkedin footer-text-color" rel="nofollow"
-                                           href="{{instagram}}"
-                                           target="_blank"><i class="jli-instagram"></i></a></li>
-                                    <li style="display:none"><a class="linkedin footer-text-color" rel="nofollow"
-                                           href="{{pinterest}}"
-                                           target="_blank"><i class="jli-pinterest"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <br>
-
-                    <div class="row bottom_footer_menu_text footer-text-color">
-                        <div class="col-md-12">
-                            <div class="lmcy_ft_w">© Copyright <span id="year"></span> https://sellmynote.net. All
-                                rights reserved.
-                                <ul id="menu-footer-menu" class="menu-footer " style="display: flex">
-                                    <li class="menu-item menu-item-6" style=" display: inherit">
-                                        <a class="footer-text-color" title="" href="terms.html">Terms of Use</a>
-                                    </li>
-                                    <li class="menu-item menu-item-7" style=" display: inherit">
-                                        <a class="footer-text-color" title="" href="privacy.html">Privacy Policy</a>
-                                    </li>
-                                    <li class="menu-item menu-item-7" style=" display: inherit">
-                                        <a class="footer-text-color" title="" href="sitemap.html">Sitemap</a>
-                                    </li>
-                                    <li class="menu-item menu-item-7" style=" display: inherit">
-                                        <a class="footer-text-color" title="" href="contact.html">Contact Us!</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <!-- Footer-->
+       <footer class="py-5 bg-footer text-center footer-text-color">
+            <div class="container mb-4"><p class="m-0 text-center ">
+            <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: none " src="" onerror="this.remove()"></span>
+                <span class="navbar-brand">sellmynote</span>
+            </p></div>
+           <ul class="list-inline mb-4" style="display: none">
+                <li class="list-inline-item" style="display: none">
+                    <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href="{{facebook}}"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li class="list-inline-item"  style="display: none">
+                    <a class="social-link rounded-circle footer-text-color mr-3" target="_blank"  href="{{twitter}}"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li class="list-inline-item"  style="display: none">
+                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href="{{instagram}}"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li class="list-inline-item"  style="display: none">
+                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href="{{pinterest}}"><i class="icon-social-pinterest"></i></a>
+                </li>
+                <li class="list-inline-item"  style="display: none">
+                    <a class="social-link rounded-circle footer-text-color" target="_blank"  href="{{youtube}}"><i class="icon-social-youtube"></i></a>
+                </li>
+            </ul>
+            <div class="container"><p class="m-0 text-center">Copyright &copy; https://sellmynote.net. All rights reserved.</p></div>
         </footer>
-    </div>
-</div>
-<script src="article/js/jquery.min.js" type="fa2c835219960e3374a01bbc-text/javascript"></script>
-<script type="fa2c835219960e3374a01bbc-text/javascript">
-    for(var cards=jQuery(".sidewidget"),i=0;i<cards.length;i++){var target=Math.floor(Math.random()*cards.length-1)+1,target2=Math.floor(Math.random()*cards.length-1)+1;cards.eq(target).before(cards.eq(target2))}var cards2=jQuery(".foterwidget");for(i=0;i<cards2.length;i++){var btarget=Math.floor(Math.random()*cards2.length-1)+1,btarget2=Math.floor(Math.random()*cards2.length-1)+1;cards2.eq(btarget).before(cards2.eq(btarget2))} if(localStorage.consent==undefined)jQuery("#ccokies").show();document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
-<script src="article/js/rocket-loader.min.js" data-cf-settings="fa2c835219960e3374a01bbc-|49" defer=""></script>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
-
